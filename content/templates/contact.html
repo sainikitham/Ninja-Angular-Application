@@ -1,0 +1,8 @@
+<div class="content">
+<form name="myform" novalidate ng-submit="addit()">
+<input id="formname" type="text" placeholder="Enter ur name" name="name" ng-model="contact.name" ng-required="true">
+<input id="formemail" type="email" placeholder="Enter ur email" name="email" ng-model="contact.email" ng-required="true">
+<textarea id="formarea" name="textarea" placeholder="message" ng-model="contact.message" rows="4" cols="145" style="margin-left:12px;margin-top:10px;border:1px solid grey;border-radius:4px;" ng-required="true"></textarea>
+<input id="btn" type="submit" name="submit" ng-disabled="myform.$invalid">
+</form>
+</div>
